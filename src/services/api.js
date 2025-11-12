@@ -32,9 +32,6 @@ api.interceptors.request.use(
 // Handle 401 responses (unauthorized - token expired/invalid), after sending request
 api.interceptors.response.use(
   (response) => response,
-  //So when API detects a bad token →
-  // it sends an event →
-  //AuthContext logs the user out and redirects.
   (error) => {
     if (error.response?.status === 401) {
       // Token is invalid or expired

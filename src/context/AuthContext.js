@@ -114,7 +114,6 @@ export const AuthProvider = ({ children }) => {
         clearInterval(expirationCheckInterval.current);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]); // Only depend on token to avoid unnecessary re-renders
 
   const login = (token, userData) => {
