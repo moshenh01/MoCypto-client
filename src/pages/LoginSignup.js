@@ -100,7 +100,7 @@ function LoginSignup() {
                 required
                 minLength={2}
                 pattern="[a-zA-Z\s]+"
-                title="Name must contain only letters and spaces, and be at least 2 characters long"
+                title="Name must contain only English letters and spaces, and be at least 2 characters long"
               />
             </div>
           )}
