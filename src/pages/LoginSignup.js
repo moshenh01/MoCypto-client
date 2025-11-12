@@ -41,7 +41,7 @@ function LoginSignup() {
         }
         // Validate name contains only letters and spaces
         if (!/^[a-zA-Z\s]+$/.test(name.trim())) {
-          setError('Name must contain only letters and spaces');
+          setError('Name must contain only English letters and spaces');
           setLoading(false);
           return;
         }
